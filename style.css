@@ -171,12 +171,19 @@ figcaption{
     font-size: 1.875rem;
     position: absolute;
     bottom: 0;
-    margin: 0;
     padding: 0;
     width: 100%;
+    border-radius: 20px;
+    margin: 1rem;
+}
+figcaption a:hover{
+    background-color: #ca6702;
+    color: #DBE5DE;
+    border-radius: 20px;
 }
 /* make the a have a big clickable area with display: block - the link occupies its containing element, the figcaption */
 figcaption a {
+
     display: block;
     padding: 1rem;
     list-style-type: none;
