@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -28,7 +31,21 @@
     </nav>
 </header>
 
-<h1>comming soon!</h1>
+<form action="#" method="post" class="my-form">
+    <label for="name">Name: </label>
+    <input required type="text" id="name" name="name">
+
+    <label for="lastname">Last Name: </label>
+    <input required type="text" id="lastname" name="lastname">
+
+    <label for="email">Email: </label>
+    <input required type="email" id="email" name="email">
+
+    <label for="message">Message: </label>
+    <textarea  id="message" ></textarea>
+
+    <button class="btn-button">Summit</button>
+</form>
 
 <!--script.js files --->
 <script src="script.js"></script>

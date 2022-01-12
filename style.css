@@ -19,6 +19,7 @@ Clearly there is more you could place in variables, up to you if you want to use
 /* generic site styles */
 
 html {
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
 
@@ -106,9 +107,6 @@ header{
     padding: 0;
     margin: 0;
 }
-#hero h2{
-    font-size: 2.5rem;
-}
 #hero img{
     max-width: 100%;
     max-height: 454px;
@@ -133,8 +131,8 @@ section {
     
 }
 
-section h2 {
-    font-size: 2.5rem;
+section h1 {
+    font-size: 1.5rem;
 }
  #card__wrapper ul{
      list-style-type: none;
@@ -209,15 +207,55 @@ section figure img{
     height: 540px;
 }
 
+/* style the form */
+form{
+    margin: 0 auto;
+    width: 30em;
+    max-width: 90%;
+}
+.my-form{
+    padding-top: 10px;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+}
+label,
+input,
+textarea,
+button{
+    font-size: 1.3rem;
+    line-height: 1.2;
+}
 
+label{
+    display: block;
+    margin-bottom: 0.5rem;
+}
+button{
+    display: block;
+    margin-top: 1rem;
+}
+.btn-button{
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #3d9397;
+    background-color: #3d9397 ;
+    color: white;
+}
+.btn-button:hover{
+    border: 1px solid #ca6702;
+    background-color:  #ca6702;
+    color: white;
+}
 
 @media (min-width: 550px){
     
     section ul{
-        display: flex;
         flex-direction: row wrap;
+        display: flex;
         justify-content: space-between;
     }
+
     section li{
         flex-basis: 49.5%;
     }
@@ -248,7 +286,7 @@ section figure img{
 
 }
 @media (min-width: 800px){
-    section h2{
+    section h1{
         margin-left: 100px;
     }
     
