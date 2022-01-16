@@ -124,87 +124,8 @@ header{
     display: block;
 }
 /* sections ul li */
-section {
-    max-width: 1200px;
-    margin: 0 auto 5rem auto;
-    padding: 0 1rem;
-    
-}
-
 section h1 {
     font-size: 1.5rem;
-}
- #card__wrapper ul{
-     list-style-type: none;
- }
-section ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-
-/* card__wrapper styles,To keep mobile screens from being stupid long, consider setting a max height on the images and hide the overflow. 
-Spelled out the individual border styles so border-color could go elsewhere. Styling is the same for all borders except the color. */
-figure{
-    margin: 0 0 0.5rem 0;
-    padding: 0;
-    height: 100%;
-    max-height: 400px;
-    overflow: hidden;
-    position: relative;
-    border-width: 10px;
-    border-style: solid;
-    border-radius: 5px;
-}
-/* strange open space at the bottom of the box which shows through the transparent overlay - this kills it */
-figure img {
-    margin-bottom: -4px;
-    width: 100%;
-    object-fit: cover;
-    object-position: 0 -150px;
-}
-figcaption{
-    background-color: rgb(255,255,255, 0.8);
-    font-size: 1.875rem;
-    position: absolute;
-    bottom: 0;
-    padding: 0;
-    width: 100%;
-    border-radius: 20px;
-    margin: 1rem;
-}
-figcaption a:hover{
-    background-color: #ca6702;
-    color: #DBE5DE;
-    border-radius: 20px;
-}
-/* make the a have a big clickable area with display: block - the link occupies its containing element, the figcaption */
-figcaption a {
-
-    display: block;
-    padding: 1rem;
-    list-style-type: none;
-    text-decoration: none;
-    color: var(--color1);
-}
-/* green stripe for card__wrapper images */
-.stripe{
-    background-color: #DBE5DE;
-    color: #DBE5DE;
-    padding: 1rem 0 2rem 0;
-}
-section figure{
-    display: flex;
-    max-width: 1200px;
-    justify-content: center;
-    gap: 1rem;
-}
-section figure img{
-    min-width: 100%;
-    display: flex;
-    flex-direction: column;
-    height: 540px;
 }
 
 /* style the form */
@@ -249,28 +170,6 @@ button{
 }
 
 @media (min-width: 550px){
-    
-    section ul{
-        flex-direction: row wrap;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    section li{
-        flex-basis: 49.5%;
-    }
-    #card__wrapper li:last-child{
-        flex-basis: 100%;
-    }
-    #card__wrapper li:last-child figure img {
-        object-position: 0 -350px;
-    }
-
-    /* turn off object position, inherit object-fit: cover */
-    figure img{
-        object-position: 0;
-    }
-
      /* display: flow-root clears the float!!!! max-width keeps the text line length shorter */
      .missiontext{
          display: flow-root;
@@ -289,22 +188,10 @@ button{
     section h1{
         margin-left: 100px;
     }
-    
-    #card__wrapper li:last-child,
-    section li{
-        flex-basis: 32.5%;
-    }
-    #card__wrapper li:last-child figure img {
-        object-position: 0;
-    }
 
 
 }
 @media(min-width: 768px){
-    #card__wrapper li:last-child,
-    section li{
-        flex-basis: 32.5%;
-    }
     #hero img{
         width: 1024%;
     }
@@ -330,6 +217,3 @@ button{
         display: none;
     }
 }
-
-
-
