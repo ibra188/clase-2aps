@@ -148,6 +148,10 @@ button{
     line-height: 1.2;
 }
 
+textarea{
+    height: 10rem;
+}
+
 label{
     display: block;
     margin-bottom: 0.5rem;
@@ -221,6 +225,51 @@ figcaption a{
     color: white;
     padding: 1rem 0 2rem 0;
 }
+section h1{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1em;
+    color: #e67e22;
+}
+section h1:before,
+h1:after{
+    color: #ffffff;
+    content: "";
+    border-top: 0.1em double #e67e22;
+    align-self: center;
+}
+
+ /** Section-about **/
+ .author-wrapper{
+    max-width:  1200px;
+    margin: 0 auto 5rem auto;
+    padding: 0 1rem;
+ }
+ .media-illustration img{
+    margin: 2em 3em auto;
+    border-radius: 50%;
+}
+
+ .media-content h2{
+   margin: 2rem auto;
+   width: 200px;
+   background-color: #3d9397;
+   color: #ffffff;
+   font-size: 20px;
+   padding: 16px;
+   border-radius: 10px;
+ }
+ p{
+    max-width: 100%;
+    padding: 20px;
+    line-height: 1rem;
+    letter-spacing: 0.1em;
+  }
+  
+
+
+
 @media (min-width: 550px){
      /* display: flow-root clears the float!!!! max-width keeps the text line length shorter */
      .missiontext{
@@ -232,7 +281,7 @@ figcaption a{
          shape-outside: polygon(35.84% 94.87%, 34.64% 87.05%, 51.64% 4.06%, 55.1% 2.38%);
          max-height: 211px;
      }
-     section ul{
+     section ul, .media{
          display: flex;
          flex-flow: row wrap;
          justify-content: space-between;
@@ -252,7 +301,16 @@ figcaption a{
     figure img{
         object-position: 0;
     }
+    
+    .media-illustration {
+        flex-basis: 20%;
+      }
+      .media-content {
+        flex-basis: 80%;
+      }
 }
+
+
 @media (min-width: 800px){
     section h1{
         margin-left: 100px;
@@ -265,18 +323,42 @@ figcaption a{
         object-position: 0;
     }
 
-
 }
 @media(min-width: 768px){
     #hero img{
         width: 1024%;
     }
+
+    .media{
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        gap: 1em;
+    }
+    .media-illustration img {
+        margin-top: 6rem;
+    }
 }
+
+
 @media(min-width: 1440px){
     #hero img{
         width: 1440%;
     }
+    .author-wrapper{
+        max-width:  1200px;
+        margin: 0 auto 5rem auto;
+        padding: 0 1rem;
+     }
+    .media-illustration {
+        flex-basis: 10%;
+      }
+      .media-content {
+        flex-basis: 90%;
+      }
 }
+
+
 @media screen and (min-width: 600px){
     .nav__link{
         display: block;
@@ -293,3 +375,4 @@ figcaption a{
         display: none;
     }
 }
+
