@@ -268,6 +268,27 @@ h1:after{
   }
   
 
+/**  INFORMATICA **/
+.informatica{
+    max-width: 100%;
+    background-color:  #DBE5DE;
+}
+ #media--content{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     
+ }
+#media--content img{
+  margin: 1em 1rem 1em 1rem;
+}
+
+
+
+
+
+
+
 
 
 @media (min-width: 550px){
@@ -375,4 +396,3 @@ h1:after{
         display: none;
     }
 }
-
