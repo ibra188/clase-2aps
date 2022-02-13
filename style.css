@@ -279,12 +279,61 @@ h1:after{
     align-items: center;
 }
 
+/** Footer **/
+.footer-wrapper{
+    padding: 20px;
+    max-width: 100%;
+    background-color: #001219;
+    color: #ffffff;
+}
+.footer-items{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+}
+ol{
+    list-style: none;
+    margin: 10px;
+    flex-direction: row;
+    display: flex;
+}
+.nav--link{
+    margin: 2rem;
+}
+.nav--link a{
+    padding: 20px;
+    font-size: 20px;
+    text-decoration-line: none;
+    color: white;
+}
+.nav--link a:hover{
+    background-color: #ca6702;
+    color: #ffffff;
+    border-radius: 10px;
+}
+.footer-wrapper a{
+    display: inline-block;
+    color: white;
+    text-decoration-line: none;
+}
+ion-icon{
+    margin-top: 2.2em;
+    display: inline-block;
+    font-size: 20px;
+    color: #9b2226;
+}
 
-
-
-
-
-
+@media only screen and (max-width: 1000px) {
+    ol{
+        flex-direction: column;
+    }
+    .nav--link{
+        margin: 1rem;
+    }
+}
 
 @media (min-width: 550px){
      /* display: flow-root clears the float!!!! max-width keeps the text line length shorter */
@@ -353,6 +402,12 @@ h1:after{
     }
     .media-illustration img {
         margin-top: 6rem;
+    }
+    ol{
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        gap: 1em;
     }
 }
 
